@@ -18,11 +18,11 @@ Send an email to jordan@necessarygames.com.
 Note: the libraries and assets used may be covered by their own licenses. 
 Please see the credits, and libraries in question for more information.
 
-I'm afraid the code is not very well commented. For additional context 
-regarding some of the challenges I faced with Twine and SugarCube 
-(specifically with getting the various typing effects that I wanted to 
-work), and some of the solutions I came up with,  see my Twine forum 
-posts from March and April, 2016: 
+I'm afraid the code is not very well commented, and involves several hacks.
+For additional context regarding some of the challenges I faced with Twine 
+and SugarCube (specifically with getting the various typing effects that I 
+wanted to work), and some of the solutions I came up with,  see my Twine 
+forum posts from March and April, 2016: 
 http://twinery.org/forum/profile/discussions/312/JordanMagnuson
 
 ------------------------------------------------------------------------
