@@ -5,7 +5,7 @@ VC:\u005cUsers\u005cJordan\u005cGoogle Drive\u005cTwine\u005cMs. Lojka\u005cbuil
 p2
 sS'saveDestination'
 p3
-VC:\u005cUsers\u005cJordan\u005cGoogle Drive\u005cTwine\u005cMs. Lojka\u005cMs. Lojka reboot 48 - release104.tws
+S'C:\\Users\\Jordan\\Google Drive\\Twine\\Ms. Lojka\\src\\Ms. Lojka.tws'
 p4
 sS'metadata'
 p5
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<set $version = '1.03'>>\u000a\u000a<<set $vision = 0>>\u000a<<set $blood = 0>>\u000a<<set $spirits = 0>>\u000a<<set $servant = 0>>\u000a<<set $smoke = 0>>\u000a<<set $essence = 0>>\u000a<<set $shadows = 0>>\u000a\u000a<<goto 'Ending'>>
+V<<set $version = '1.03'>>\u000a\u000a<<set $vision = 0>>\u000a<<set $blood = 0>>\u000a<<set $spirits = 0>>\u000a<<set $servant = 0>>\u000a<<set $smoke = 0>>\u000a<<set $essence = 0>>\u000a<<set $shadows = 0>>\u000a\u000a<<goto 'Title'>>
 p22
 sS'title'
 p23
@@ -49,13 +49,13 @@ ctime
 struct_time
 p26
 ((I2016
-I4
-I6
-I20
-I57
-I15
-I2
-I97
+I10
+I17
+I19
+I10
+I38
+I0
+I291
 I1
 tp27
 (dp28
@@ -2211,7 +2211,7 @@ Tiddler
 p714
 (dp715
 g21
-V/*! typed.js integration module for SugarCube */ ! function() {\u000a    "use strict";\u000a    var getInlineOptions = function(classNames) {\u000a            var match, options = {},\u000a                typedRe = /^typed(?:-(\u005cw+))+\u005cb$/,\u000a                parseRe = /-(speed|delay)(\u005cd+)\u005cb/g;\u000a            if ("typed" !== classNames) {\u000a                classNames = classNames.toLowerCase().split(/\u005cs+/);\u000a                for (var i = 0; i < classNames.length; i++)\u000a                    if (typedRe.test(classNames[i])) {\u000a                        for (; null !== (match = parseRe.exec(classNames[i]));) switch (match[1]) {\u000a                            case "speed":\u000a                                options.typeSpeed = +match[2];\u000a                                break;\u000a                            case "delay":\u000a                                options.startDelay = +match[2]\u000a                        }\u000a                        break\u000a                    }\u000a            }\u000a            return options\u000a        },\u000a        typedCallbackFactory = function(el, callback) {\u000a			var outer = jQuery(el);\u000a			var inner = jQuery('<div class="typedjs-text-wrapper" style="display:block;position:absolute;left:0;top:0;"><span class="typed"></span></div>');\u000a			var source = outer.children('[class|="typed"]');\u000a			if (tags().contains('between')) {\u000a				var strings = source.text().replace(/\u005c./g, ".@");\u000a				strings = strings.replace(/\u005c?/g, "?@");\u000a				strings = strings.split('@');\u000a				if (strings.length > 1) {\u000a					strings.pop();\u000a				}\u000a			}\u000a			else {\u000a				var strings = [source.html()];\u000a			}\u000a            return function() {\u000a                var $outer = outer,\u000a                    $inner = inner,\u000a                    $source = source,\u000a					$strings = strings,\u000a                    options = jQuery.extend({\u000a                        typeSpeed: 20,\u000a                        startDelay: 1000\u000a                    }, getInlineOptions($source.attr("class")), {\u000a                        strings: $strings\u000a                    });\u000a                "function" == typeof callback && (options.callback = callback), $outer.append($inner), $inner.children().typed(options)\u000a            }\u000a        };\u000a    postrender.typedSetupHandler = function(content) {\u000a		//----------------------------------------------------------------------\u000a		// CUSTOM HACK: Apply typed class to every passage.\u000a		var typedSpeed = 20;\u000a		var typedDelay = 1000;\u000a		var autoTyped = true;\u000a		var currentPassage = Story.get(state.passage);\u000a		if (state.passage == 'Title') {\u000a			autoTyped = false;\u000a		}\u000a		if ( tags().contains('notype') ) {\u000a			autoTyped = false;\u000a		}\u000a		if (autoTyped) {\u000a			jQuery(content).wrapInner('<div class="typed-speed' + typedSpeed + '-delay' + typedDelay + '" />');\u000a		}\u000a		var source = jQuery('[class|="typed"]', content);\u000a		var sourceHTML = source.html();\u000a		var sourceClasses = source.attr('class');\u000a		//var cleanedHTML = sourceHTML.replace(/\u005c^\u005cd+/g,'');	// Remove typedjs pauses (e.g. ^1000).\u000a		//jQuery('[class|="typed"]', content).html().replace(/\u005c^\u005cd+/g,'');\u000a		//source.html(cleanedHTML);\u000a		source.attr('class', 'typed-original').css({'position': 'absolute', 'top': 0, 'left': 0}).before('<div class="typedjs-outer-wrapper" style="display:block;position:relative;"><div style="visibility:hidden;" class="' + sourceClasses + ' typed">' + sourceHTML + '</div></div>').prev().andSelf().wrapAll('<div class="typedjs-outer-outer-wrapper" />');\u000a		\u000a		// Make a super outer wrapper for ALL passages, for padding purposes.\u000a		jQuery(content).wrapInner('<div class="super-outer-passage-wrapper" />');\u000a		//----------------------------------------------------------------------\u000a    }, postdisplay.typedAnimationHandler = function() {\u000a        for (var $elements = jQuery("#passages .typedjs-outer-wrapper"), callback = null, i = $elements.length - 1; i >= 0; --i) callback = typedCallbackFactory($elements[i], callback);\u000a        "function" == typeof callback && callback();\u000a    }\u000a}();
+V/*! typed.js integration module for SugarCube */ ! function() {\u000a    "use strict";\u000a    var getInlineOptions = function(classNames) {\u000a            var match, options = {},\u000a                typedRe = /^typed(?:-(\u005cw+))+\u005cb$/,\u000a                parseRe = /-(speed|delay)(\u005cd+)\u005cb/g;\u000a            if ("typed" !== classNames) {\u000a                classNames = classNames.toLowerCase().split(/\u005cs+/);\u000a                for (var i = 0; i < classNames.length; i++)\u000a                    if (typedRe.test(classNames[i])) {\u000a                        for (; null !== (match = parseRe.exec(classNames[i]));) switch (match[1]) {\u000a                            case "speed":\u000a                                options.typeSpeed = +match[2];\u000a                                break;\u000a                            case "delay":\u000a                                options.startDelay = +match[2]\u000a                        }\u000a                        break\u000a                    }\u000a            }\u000a            return options\u000a        },\u000a        typedCallbackFactory = function(el, callback) {\u000a			var outer = jQuery(el);\u000a			var inner = jQuery('<div class="typedjs-text-wrapper" style="display:block;position:absolute;left:0;top:0;"><span class="typed"></span></div>');\u000a			var source = outer.children('[class|="typed"]');\u000a			if (tags().contains('between')) {\u000a				var strings = source.text().replace(/\u005c./g, ".@");\u000a				strings = strings.replace(/\u005c?/g, "?@");\u000a				strings = strings.split('@');\u000a				if (strings.length > 1) {\u000a					strings.pop();\u000a				}\u000a			}\u000a			else {\u000a				var strings = [source.html()];\u000a			}\u000a            return function() {\u000a                var $outer = outer,\u000a                    $inner = inner,\u000a                    $source = source,\u000a					$strings = strings,\u000a                    options = jQuery.extend({\u000a                        typeSpeed: 20,\u000a                        startDelay: 1000\u000a                    }, getInlineOptions($source.attr("class")), {\u000a                        strings: $strings\u000a                    });\u000a                "function" == typeof callback && (options.callback = callback), $outer.append($inner), $inner.children().typed(options)\u000a            }\u000a        };\u000a    postrender.typedSetupHandler = function(content) {\u000a		//----------------------------------------------------------------------\u000a		// CUSTOM HACK: Apply typed class to every passage.\u000a		var typedSpeed = 20;\u000a		var typedDelay = 1000;\u000a		var autoTyped = true;\u000a		var currentPassage = Story.get(state.passage);\u000a		if (state.passage == 'Title') {\u000a			autoTyped = false;\u000a		}\u000a		if ( tags().contains('notype') ) {\u000a			autoTyped = false;\u000a		}\u000a		if (autoTyped) {\u000a			jQuery(content).wrapInner('<div class="typed-speed' + typedSpeed + '-delay' + typedDelay + '" />');\u000a		}\u000a		var source = jQuery('[class|="typed"]', content);\u000a		var sourceHTML = source.html();\u000a		var sourceClasses = source.attr('class');\u000a		//var cleanedHTML = sourceHTML.replace(/\u005c^\u005cd+/g,'');	// Remove typedjs pauses (e.g. ^1000).\u000a		//jQuery('[class|="typed"]', content).html().replace(/\u005c^\u005cd+/g,'');\u000a		//source.html(cleanedHTML);\u000a		source.attr('class', 'typed-original').css({'position': 'absolute', 'top': 0, 'left': 0}).before('<div class="typedjs-outer-wrapper" style="display:block;position:relative;"><div style="visibility:hidden;" class="' + sourceClasses + ' typed">' + sourceHTML + '</div></div>').prev().wrapAll('<div class="typedjs-outer-outer-wrapper" />');\u000a		\u000a		// Make a super outer wrapper for ALL passages, for padding purposes.\u000a		jQuery(content).wrapInner('<div class="super-outer-passage-wrapper" />');\u000a		//----------------------------------------------------------------------\u000a    }, postdisplay.typedAnimationHandler = function() {\u000a        for (var $elements = jQuery("#passages .typedjs-outer-wrapper"), callback = null, i = $elements.length - 1; i >= 0; --i) callback = typedCallbackFactory($elements[i], callback);\u000a        "function" == typeof callback && callback();\u000a    }\u000a}();
 p716
 sg23
 VtypedjsHelper
@@ -2219,13 +2219,13 @@ p717
 sg25
 g26
 ((I2016
-I4
-I2
-I5
-I30
-I27
-I5
-I93
+I10
+I17
+I19
+I11
+I21
+I0
+I291
 I1
 tp718
 (dp719
