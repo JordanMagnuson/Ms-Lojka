@@ -23,7 +23,7 @@ p11
 (dp13
 S'selected'
 p14
-I00
+I01
 sS'pos'
 p15
 (lp16
@@ -52,7 +52,7 @@ p26
 I10
 I20
 I10
-I19
+I23
 I23
 I3
 I294
@@ -4469,7 +4469,7 @@ Tiddler
 p1433
 (dp1434
 g21
-V<div class="actor"><div id="lojka"></div></div>\u000a<<script>>\u000a\u000a	var startDelay = 3000;\u000a	var endDelay = 6000;\u000a\u000a	$('#bgmask1').hide();\u000a	$('#bgmask2').hide();\u000a	$('body').prepend('<div id="document-body-middle"><div id="document-body-top"></div></div><div id="top-repeat"><div id="top-left"></div><div id="top-right"></div></div><div id="anonymous-sparrow"></div><div id="anonymous-sparrow-tag"></div>');\u000a	$('#anonymous-sparrow').hide().delay(startDelay).slideDown(1500);\u000a	$('#anonymous-sparrow-tag').hide().delay(startDelay + 1000).fadeIn(500).delay(2000).fadeOut(500);\u000a\u000a	$('body').removeClass('neon-flicker');\u000a	$('body').stop(true,true);\u000a	$('body').fadeIn(0);\u000a\u000apostdisplay.sceneSetup = function(sceneSetup) {\u000a	$('body').removeClass('neon-flicker');\u000a	$('body').stop(true,true);\u000a	$('body').fadeIn(0);\u000a	$('#lojka').hide().delay(startDelay + 2000).fadeIn(200);\u000a    var t = theaterJS({\u000a        minSpeed: 50,\u000a        maxSpeed: 500\u000a    });\u000a    t.on("type:start, erase:start", function() {\u000a        var e = t.getCurrentActor();\u000a        e.$element.classList.add("is-typing")\u000a    }).on("type:end, erase:end", function() {\u000a        var e = t.getCurrentActor();\u000a        e.$element.classList.remove("is-typing");\u000a    }), t.addActor("lojka", {\u000a        accuracy: 0.7,\u000a        speed: 0.8\u000a    }); \u000a		t.addScene(startDelay + 7000, "lojka: I heard a scream as I walked from the bus stop to my job today,", 100, " and a man fell out of the sky onto a mini cooper that was parked in front of Barnes & Noble.", 1200, " Shattered the windshield.", 700, " Apparently a suicide.", 1000, " I'm not sure, because I didn't stop to look\u2014", 1000, "just clutched my camera and kept on walking.", 4000, " One day that tower's going to fall."); 	\u000a		t.addScene(function (done) {\u000a			$('#anonymous-sparrow').delay(endDelay).slideUp(1500);\u000a			setTimeout(function() { \u000a				$('#lojka').css('background-image', 'none');\u000a			}, endDelay + 1000);\u000a			done();\u000a		  });\u000a};\u000a<</script>>
+V<div class="actor"><div id="lojka"></div></div>\u000a<<script>>\u000a\u000a	var startDelay = 3000;\u000a	var endDelay = 6000;\u000a\u000a	$('#bgmask1').hide();\u000a	$('#bgmask2').hide();\u000a	$('body').prepend('<div id="document-body-middle"><div id="document-body-top"></div></div><div id="top-repeat"><div id="top-left"></div><div id="top-right"></div></div><div id="anonymous-sparrow"></div><div id="anonymous-sparrow-tag"></div>');\u000a	$('#anonymous-sparrow').hide().delay(startDelay).slideDown(1500);\u000a	$('#anonymous-sparrow-tag').hide().delay(startDelay + 1000).fadeIn(500).delay(2000).fadeOut(500);\u000a\u000a	$('body').removeClass('neon-flicker');\u000a	$('body').stop(true,true);\u000a	$('body').fadeIn(0);\u000a\u000apostdisplay.sceneSetup = function(sceneSetup) {\u000a	$('body').removeClass('neon-flicker');\u000a	$('body').stop(true,true);\u000a	$('body').fadeIn(0);\u000a	$('#lojka').hide().delay(startDelay + 2000).fadeIn(200);\u000a    var t = theaterJS({\u000a        minSpeed: 50,\u000a        maxSpeed: 500\u000a    });\u000a    t.on("type:start, erase:start", function() {\u000a        var e = t.getCurrentActor();\u000a        e.$element.classList.add("is-typing")\u000a    }).on("type:end, erase:end", function() {\u000a        var e = t.getCurrentActor();\u000a        e.$element.classList.remove("is-typing");\u000a    }), t.addActor("lojka", {\u000a        accuracy: 0.7,\u000a        speed: 0.8\u000a    }); \u000a		t.addScene(startDelay + 4000, "lojka: I heard a scream as I walked from the bus stop to my job today,", 100, " and a man fell out of the sky onto a mini cooper that was parked in front of Barnes & Noble.", 1200, " Shattered the windshield.", 700, " Apparently a suicide.", 1000, " I'm not sure, because I didn't stop to look\u2014", 1000, "just clutched my camera and kept on walking.", 4000, " One day that tower's going to fall."); 	\u000a		t.addScene(function (done) {\u000a			$('#anonymous-sparrow').delay(endDelay).slideUp(1500);\u000a			setTimeout(function() { \u000a				$('#lojka').css('background-image', 'none');\u000a			}, endDelay + 1000);\u000a			done();\u000a		  });\u000a};\u000a<</script>>
 p1435
 sg23
 VHang Up
@@ -4477,13 +4477,13 @@ p1436
 sg25
 g26
 ((I2016
-I4
-I5
-I11
-I27
-I57
-I1
-I96
+I10
+I20
+I10
+I22
+I0
+I3
+I294
 I1
 tp1437
 (dp1438
