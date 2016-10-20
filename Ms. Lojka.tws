@@ -703,7 +703,7 @@ Tiddler
 p235
 (dp236
 g21
-V<<set $blood = 3>>\u000aSo a guy in a pink button-down shirt and a Red Sox cap led the charge across the street. They were going to invade the tower, and presumably [[vanquish|Blood]] the unholy woman. Red Sox was carrying a [[bat|Bat]].
+V<<set $blood = 3>>\u000aSo a guy in a pink button-down shirt and a Yankees cap led the charge across the street. They were going to invade the tower, and presumably [[vanquish|Blood]] the unholy woman. Yankees was carrying a [[bat|Bat]].
 p237
 sg23
 VMatt
@@ -711,13 +711,13 @@ p238
 sg25
 g26
 ((I2016
-I4
-I1
+I10
 I20
-I12
-I31
-I4
-I92
+I9
+I59
+I11
+I3
+I294
 I1
 tp239
 (dp240
