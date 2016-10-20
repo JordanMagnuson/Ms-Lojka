@@ -1,7 +1,7 @@
 (dp0
 S'buildDestination'
 p1
-VC:\u005cUsers\u005cJordan\u005cGoogle Drive\u005cTwine\u005cMs. Lojka\u005csrc\u005cstory.html
+VC:\u005cUsers\u005cJordan\u005cGoogle Drive\u005cTwine\u005cMs. Lojka\u005csrc\u005cindex.html
 p2
 sS'saveDestination'
 p3
@@ -23,7 +23,7 @@ p11
 (dp13
 S'selected'
 p14
-I01
+I00
 sS'pos'
 p15
 (lp16
@@ -3780,7 +3780,7 @@ tp1210
 Rp1211
 sbsa(dp1212
 g14
-I00
+I01
 sg15
 (lp1213
 F150.0
@@ -3791,7 +3791,7 @@ Tiddler
 p1214
 (dp1215
 g21
-V<<script>>\u000a	$('#bgmask2').css('background-image', 'url("lojka1.jpg")');\u000a	$('#bgmask2').hide().delay(19000).fadeIn(5000);\u000a<</script>>\u000a\u000a<div class="typed-speed100-delay1500">\u000a<span class="title">Ms. Lojka^2000</span>\u000a<span class="subtitle">or: In Despair to Will to Be Oneself</span>\u000a^2000<span class="byline">By Jordan Magnuson^2000</span>\u000a<span class="illustratedbyline">Illustrated by Pavel Tymoshenko</span>\u000a</div>\u000a\u000a<div id="version">version $version<br/>[[Credits]]</div>\u000a\u000a<<timed 24s>>\u000a<span id="beginbutton" class="fadein button">\u000a<<click "Begin">><<script>>\u000a$.when( fullscreen() ).done( state.play("Lojka") );\u000a<</script>><</click>>\u000a</span>\u000a<</timed>>\u000a\u000a<<script>>\u000apostdisplay.fadeInVersion = function() {\u000a	$('#version').hide().delay(25000).fadeIn(1000);\u000a};\u000a<</script>>
+V<<script>>\u000a	$('#bgmask2').css('background-image', 'url("lojka1.jpg")');\u000a	$('#bgmask2').hide().delay(19000).fadeIn(5000);\u000a<</script>>\u000a\u000a<div class="typed-speed100-delay1500">\u000a<span class="title">Ms. Lojka^2000</span>\u000a<span class="subtitle">or: In Despair to Will to Be Oneself</span>\u000a^2000<span class="byline">By Jordan Magnuson^2000</span>\u000a<span class="illustratedbyline">Illustrated by Pavel Tymoshenko</span>\u000a</div>\u000a\u000a<div id="version">version $version<br/>[[Credits]]</div>\u000a\u000a<<timed 24s>>\u000a<span id="beginbutton" class="fadein button">\u000a<<click "Begin">><<script>>\u000a$.when( fullscreen() ).done( state.play("Lojka") );\u000a<</script>><</click>>\u000a</span>\u000a<</timed>>\u000a\u000a<<script>>\u000apostdisplay.fadeInVersion = function() {\u000a  if (State.passage == 'Title FadeIn') {\u000a	$('#version').hide().delay(25000).fadeIn(1000);\u000a  }\u000a};\u000a<</script>>
 p1216
 sg23
 VTitle FadeIn
@@ -3801,9 +3801,9 @@ g26
 ((I2016
 I10
 I20
-I9
-I14
-I10
+I11
+I6
+I5
 I3
 I294
 I1
