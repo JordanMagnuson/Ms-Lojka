@@ -757,7 +757,7 @@ Tiddler
 p252
 (dp253
 g21
-V<<set $blood = 5>>\u000aSee, here's the thing: Matt never made it across the street. He turned for a second to beckon his followers, and bam--he was down. A drunk cab driver, seemingly out of nowhere, [[splattered him|Blood]] across the pavement. The rally lost momentum after that, and everybody left.
+V<<set $blood = 5>>\u000aSee, here's the thing: Matt never made it across the street. He turned for a second to beckon his followers, and bam--he was down. A bright yellow taxi, seemingly out of nowhere, [[splattered him|Blood]] across the pavement. The rally lost momentum after that, and everybody left.
 p254
 sg23
 VBam
@@ -765,13 +765,13 @@ p255
 sg25
 g26
 ((I2016
+I10
+I20
+I10
 I4
-I2
-I2
-I59
-I22
-I5
-I93
+I8
+I3
+I294
 I1
 tp256
 (dp257
@@ -2535,7 +2535,7 @@ Tiddler
 p816
 (dp817
 g21
-V<<set $spirits = 1>>\u000aHe killed his fiancé, Sophie von Anhalt-Zerbst, because he feared that his [[love|Spirits]] for her would consume him and make him weak. Then he turned the [[entire population|Historical]] of Russia into peasants, forcing them to work in the rice fields [[day and night|Historical]].
+V<<set $spirits = 1>>\u000aHe killed his fiancé, Sophie von Anhalt-Zerbst, because he feared that his [[love|Spirits]] for her would consume him and make him weak. Then he turned the [[entire population|Historical]] of Russia into peasants, forcing them to work in the rice paddies [[day and night|Historical]].
 p818
 sg23
 VSophie
@@ -2543,13 +2543,13 @@ p819
 sg25
 g26
 ((I2016
+I10
+I20
+I10
+I5
+I15
 I3
-I22
-I9
-I42
-I35
-I1
-I82
+I294
 I1
 tp820
 (dp821
