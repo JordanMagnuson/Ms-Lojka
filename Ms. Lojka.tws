@@ -151,7 +151,7 @@ Tiddler
 p59
 (dp60
 g21
-V<<set $vision = 2>>\u000a\u000aWhenever it dates from, the thing should have been demolished years ago. Anyone can see it's about to topple, and [[when it does|Vision]], it'll come down with a [[crash|Crash]]. It must be two-hundred feet high and it's just sitting there in the heart of New York, right across from Subway and Barnes & Noble.
+V<<set $vision = 2>>\u000a\u000aWhenever it dates from, the thing should have been demolished years ago. Anyone can see it's about to topple, and [[when it does|Vision]], it'll come down with a [[crash|Crash]]. It must be two hundred feet high and it's just sitting there in the heart of New York, right across from Subway and Barnes & Noble.
 p61
 sg23
 VDate
@@ -159,13 +159,13 @@ p62
 sg25
 g26
 ((I2016
+I10
+I20
+I9
+I53
+I55
 I3
-I21
-I21
-I39
-I36
-I0
-I81
+I294
 I1
 tp63
 (dp64
@@ -1145,7 +1145,7 @@ Tiddler
 p376
 (dp377
 g21
-V<<script>>\u000a	$('#bgmask2').css('background-image', 'url("lojka2.jpg")');\u000a	$('#bgmask2').hide();\u000a<</script>>\u000a<<set $servant = 1>>\u000aI built it for the view I guess: who wouldn't want to wake up and look out over Central Park every morning from two-hundred feet up? I heard a [[voice|Voice]] say "build," [[and I built|Servant]].
+V<<script>>\u000a	$('#bgmask2').css('background-image', 'url("lojka2.jpg")');\u000a	$('#bgmask2').hide();\u000a<</script>>\u000a<<set $servant = 1>>\u000aI built it for the view I guess: who wouldn't want to wake up and look out over Central Park every morning from two hundred feet up? I heard a [[voice|Voice]] say "build," [[and I built|Servant]].
 p378
 sg23
 VView
@@ -1153,13 +1153,13 @@ p379
 sg25
 g26
 ((I2016
-I4
-I2
-I16
-I25
-I34
-I5
-I93
+I10
+I20
+I9
+I54
+I3
+I3
+I294
 I1
 tp380
 (dp381
@@ -1643,7 +1643,7 @@ Tiddler
 p535
 (dp536
 g21
-V<<set $essence = 2>>\u000aWell, this king was very [[powerful|Essence]], and so he got all the other kings in the area to help him out by sending laborers to work on his ziggurat. Even so, the project took [[three-hundred years|Bane]]. Fortunately, the ozone layer wasn't so thin back then, so people lived a lot longer than they do today.
+V<<set $essence = 2>>\u000aWell, this king was very [[powerful|Essence]], and so he got all the other kings in the area to help him out by sending laborers to work on his ziggurat. Even so, the project took [[three hundred years|Bane]]. Fortunately, the ozone layer wasn't so thin back then, so people lived a lot longer than they do today.
 p537
 sg23
 VKing
@@ -1651,13 +1651,13 @@ p538
 sg25
 g26
 ((I2016
+I10
+I20
+I9
+I54
+I28
 I3
-I31
-I21
-I0
-I14
-I3
-I91
+I294
 I1
 tp539
 (dp540
@@ -2697,7 +2697,7 @@ Tiddler
 p867
 (dp868
 g21
-VThat's right: I built that tower [[stone by stone|View]], brick by scorching brick, till it was [[two-hundred feet high|View]], standing for all to see in the heart of New York.
+VThat's right: I built that tower [[stone by stone|View]], brick by scorching brick, till it was [[two hundred feet high|View]], standing for all to see in the heart of New York.
 p869
 sg23
 VBuilt It
@@ -2705,13 +2705,13 @@ p870
 sg25
 g26
 ((I2016
-I3
-I22
-I12
+I10
+I20
+I9
+I54
 I11
-I33
-I1
-I82
+I3
+I294
 I1
 tp871
 (dp872
@@ -3077,7 +3077,7 @@ Tiddler
 p987
 (dp988
 g21
-VHe chose a ziggurat because in [[those days|King]], before elevators, ziggurats were the easiest kinds of buildings to climb\u2014and when you're talking ten-thousand feet, that kind of thing matters.
+VHe chose a ziggurat because in [[those days|King]], before elevators, ziggurats were the easiest kinds of buildings to climb\u2014and when you're talking ten thousand feet, that kind of thing matters.
 p989
 sg23
 VZiggurat
@@ -3085,13 +3085,13 @@ p990
 sg25
 g26
 ((I2016
-I3
-I17
+I10
 I20
-I12
-I34
+I9
+I55
+I19
 I3
-I77
+I294
 I1
 tp991
 (dp992
@@ -3780,7 +3780,7 @@ tp1210
 Rp1211
 sbsa(dp1212
 g14
-I01
+I00
 sg15
 (lp1213
 F150.0
