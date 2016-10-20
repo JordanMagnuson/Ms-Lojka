@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<set $version = '1.10'>>\u000a\u000a<<set $vision = 0>>\u000a<<set $blood = 0>>\u000a<<set $spirits = 0>>\u000a<<set $servant = 0>>\u000a<<set $smoke = 0>>\u000a<<set $essence = 0>>\u000a<<set $shadows = 0>>\u000a\u000a<<goto 'Title'>>
+V<<set $version = '1.10'>>\u000a\u000a<<set $vision = 0>>\u000a<<set $blood = 0>>\u000a<<set $spirits = 0>>\u000a<<set $servant = 0>>\u000a<<set $smoke = 0>>\u000a<<set $essence = 0>>\u000a<<set $shadows = 0>>\u000a\u000a<<goto 'Ending'>>
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2016
 I10
 I20
-I9
-I17
-I49
+I10
+I7
+I32
 I3
 I294
 I1
@@ -4765,13 +4765,13 @@ p1530
 sg25
 g26
 ((I2016
-I4
-I5
-I11
-I8
-I6
-I1
-I96
+I10
+I20
+I10
+I13
+I23
+I3
+I294
 I1
 tp1531
 (dp1532
@@ -4817,7 +4817,7 @@ Tiddler
 p1547
 (dp1548
 g21
-V<div class="actor"><div id="lojka"></div></div>\u000a<<script>>\u000a	$('#bgmask2').css('z-index', '-1');\u000a	$('#bgmask1').css('z-index', '0');\u000a	$('#bgmask1').css('background-image', 'url("rasputin.jpg")');\u000a	$('#bgmask1').hide();\u000a<</script>>\u000a<<script>>\u000apostdisplay.sceneSetup = function(sceneSetup) {\u000a    var t = theaterJS({\u000a        minSpeed: 50,\u000a        maxSpeed: 300\u000a    });\u000a    t.on("type:start, erase:start", function() {\u000a        var e = t.getCurrentActor();\u000a        e.$element.classList.add("is-typing")\u000a    }).on("type:end, erase:end", function() {\u000a        var e = t.getCurrentActor();\u000a        e.$element.classList.remove("is-typing");\u000a    }), t.addActor("lojka", {\u000a        accuracy: .79,\u000a        speed: .9\u000a    }), t.addScene(1000, "lojka: Do you still tell mysel", -5, "yourself it was", function (done) {$('#bgmask1').fadeIn(0).fadeOut(100).fadeIn(0).fadeOut(200).fadeIn(0).fadeOut(300).fadeIn(0).fadeOut(10000);sndNeon.play();done()}, " Rasputin who fed on the peasants of Russia?", 2000, " But tell me,", 100, " my sweet\u2014", 600, "where are your friends who used to walk these streets and tend the delis?", 800, " Tell me,", 100, " where is Matt,", 200, " the nowhere king?", 2000), \u000a		t.addScene(function (done) {\u000a			State.play('Lojka6');\u000a			done()\u000a		  }),\u000a		delete postdisplay[sceneSetup]\u000a};\u000a<</script>>
+V<div class="actor"><div id="lojka"></div></div>\u000a<<script>>\u000a	$('#bgmask2').css('z-index', '-1');\u000a	$('#bgmask1').css('z-index', '0');\u000a	$('#bgmask1').css('background-image', 'url("rasputin.jpg")');\u000a	$('#bgmask1').hide();\u000a<</script>>\u000a<<script>>\u000apostdisplay.sceneSetup = function(sceneSetup) {\u000a    var t = theaterJS({\u000a        minSpeed: 50,\u000a        maxSpeed: 300\u000a    });\u000a    t.on("type:start, erase:start", function() {\u000a        var e = t.getCurrentActor();\u000a        e.$element.classList.add("is-typing")\u000a    }).on("type:end, erase:end", function() {\u000a        var e = t.getCurrentActor();\u000a        e.$element.classList.remove("is-typing");\u000a    }), t.addActor("lojka", {\u000a        accuracy: .79,\u000a        speed: .9\u000a    }), t.addScene(1000, "lojka: Do you still tell yourself it was", function (done) {$('#bgmask1').fadeIn(0).fadeOut(100).fadeIn(0).fadeOut(200).fadeIn(0).fadeOut(300).fadeIn(0).fadeOut(10000);sndNeon.play();done()}, " Rasputin who fed on the peasants of Russia?", 2000, " But tell me,", 100, " my sweet\u2014", 600, "where are your friends who used to walk these streets and tend the delis?", 800, " Tell me,", 100, " where is Matt,", 200, " the nowhere king?", 2000), \u000a		t.addScene(function (done) {\u000a			State.play('Lojka6');\u000a			done()\u000a		  }),\u000a		delete postdisplay[sceneSetup]\u000a};\u000a<</script>>
 p1549
 sg23
 VLojka5
@@ -4825,13 +4825,13 @@ p1550
 sg25
 g26
 ((I2016
-I4
-I5
-I11
-I8
-I17
-I1
-I96
+I10
+I20
+I10
+I14
+I30
+I3
+I294
 I1
 tp1551
 (dp1552
