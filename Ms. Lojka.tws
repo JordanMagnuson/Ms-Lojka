@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<set $version = '1.10'>>\u000a\u000a<<set $vision = 0>>\u000a<<set $blood = 0>>\u000a<<set $spirits = 0>>\u000a<<set $servant = 0>>\u000a<<set $smoke = 0>>\u000a<<set $essence = 0>>\u000a<<set $shadows = 0>>\u000a\u000a<<goto 'Ending'>>
+V<<set $version = '1.10'>>\u000a\u000a<<set $vision = 0>>\u000a<<set $blood = 0>>\u000a<<set $spirits = 0>>\u000a<<set $servant = 0>>\u000a<<set $smoke = 0>>\u000a<<set $essence = 0>>\u000a<<set $shadows = 0>>\u000a\u000a<<goto 'Warning'>>
 p22
 sS'title'
 p23
@@ -52,8 +52,8 @@ p26
 I10
 I20
 I10
-I7
-I32
+I19
+I23
 I3
 I294
 I1
