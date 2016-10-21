@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<set $version = '1.10'>>\u000a\u000a<<set $vision = 0>>\u000a<<set $blood = 0>>\u000a<<set $spirits = 0>>\u000a<<set $servant = 0>>\u000a<<set $smoke = 0>>\u000a<<set $essence = 0>>\u000a<<set $shadows = 0>>\u000a\u000a<<goto 'Warning'>>
+V<<set $version = '1.11'>>\u000a\u000a<<set $vision = 0>>\u000a<<set $blood = 0>>\u000a<<set $spirits = 0>>\u000a<<set $servant = 0>>\u000a<<set $smoke = 0>>\u000a<<set $essence = 0>>\u000a<<set $shadows = 0>>\u000a\u000a<<goto 'Warning'>>
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2016
 I10
 I21
-I10
-I20
-I16
+I11
+I9
+I19
 I4
 I295
 I1
@@ -5661,7 +5661,7 @@ Tiddler
 p1819
 (dp1820
 g21
-Vwindow.sndTest = new Howl({\u000a	src: ['sound_volume_check_test.mp3'],\u000a	loop: false,\u000a	volume: 0.6\u000a});\u000a\u000a\u000awindow.sndWhispers = new Howl({\u000a	src: ['whispers.mp3'],\u000a	loop: true,\u000a	volume: 0.6\u000a});\u000a\u000awindow.sndScream01 = new Howl({\u000a	src: ['scream01.mp3'],\u000a	loop: false,\u000a	volume: 0.8\u000a});\u000a\u000awindow.sndNeon = new Howl({\u000a	src: ['neon.mp3'],\u000a	loop: false,\u000a	volume: 0.6\u000a});\u000a\u000awindow.sndGlitch = new Howl({\u000a	src: ['glitch.mp3'],\u000a	loop: true,\u000a	volume: 0.6\u000a});\u000a\u000awindow.sndYay = new Howl({\u000a	src: ['yay.mp3'],\u000a	loop: false,\u000a	volume: 0.6\u000a});\u000a\u000awindow.sndCannon = new Howl({\u000a	src: ['cannon.mp3'],\u000a	loop: false,\u000a	volume: 0.7\u000a});\u000a\u000awindow.sndWhisper01 = new Howl({\u000a	src: ['whisper01.mp3'],\u000a	loop: false,\u000a	volume: 0.9\u000a});\u000a\u000awindow.sndWhisper02 = new Howl({\u000a	src: ['whisper02.mp3'],\u000a	loop: false,\u000a	volume: 0.7\u000a});\u000a\u000awindow.sndWhisper03 = new Howl({\u000a	src: ['whisper03.mp3'],\u000a	loop: false,\u000a	volume: 0.7\u000a});\u000a\u000a\u000awindow.sndWhisper04 = new Howl({\u000a	src: ['whisper04.mp3'],\u000a	loop: false,\u000a	volume: 0.7\u000a});\u000a\u000a/** Typewriter stuff **/\u000awindow.sndKey01 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey02 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey03 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey04 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey05 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey06 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey07 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey08 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000a\u000avar sndArray = Array(sndKey01, sndKey02, sndKey03, sndKey04, sndKey05,sndKey06, sndKey07, sndKey08);\u000avar sndRandom = sndKey01;\u000avar minVolume = 0.1;\u000avar maxVolume = 0.6;\u000avar volume = minVolume;\u000a\u000awindow.playRandomKeystrokeSound = function(volume) {\u000a	sndRandom = sndArray[Math.floor(Math.random() * sndArray.length)];\u000a	if (!volume) {\u000a		volume = Math.random() * maxVolume;\u000a	}\u000a	if (volume < minVolume) {\u000a		volume = minVolume;\u000a	}\u000a	sndRandom.volume(volume);\u000a	sndRandom.play();\u000a};\u000a\u000a/** Glitch stuff **/\u000awindow.playRandomGlitchSound = function(length) {\u000a	try\u000a	{\u000a		var volume = 0.5;\u000a		/**\u000a		var duration = sndGlitch.duration();\u000a		var position = Math.random() * duration;\u000a		sndGlitch.seek(position);\u000a		**/\u000a		sndGlitch.volume(volume);\u000a		sndGlitch.play();\u000a		setTimeout(function() { \u000a			sndGlitch.pause();\u000a		}, length);		\u000a	}\u000a	catch(e) {\u000a	}\u000a};\u000a\u000awindow.neonSign = function(){\u000a    var randSeconds = Math.floor(Math.random()*2000)+0;\u000a    var randDelay = randSeconds;\u000a    var speed=300;\u000a    var $toAnimate=$('body.neon-flicker');\u000a    $toAnimate.delay(randDelay).animate({'opacity':0.3},speed,function() {\u000a        $toAnimate.animate({'opacity':1},speed,neonSign() );\u000a		if (Math.random() > 0.5)\u000a		{\u000a			var volume = Math.random() * 0.6;\u000a		}\u000a    });\u000a};\u000a\u000a/** Whisper sounds in 'between' passages (and end sequence). **/\u000apostdisplay.handleWhisperSounds = function() {\u000a	if (tags().contains('endsequence')) {\u000a		return;\u000a	}\u000a	else {\u000a		if (tags().contains('between'))\u000a		{\u000a			sndWhispers.play();\u000a		}\u000a		else {\u000a			sndWhispers.stop();\u000a		}\u000a	}\u000a};\u000a\u000apostdisplay.handleLinkClicks = function() {\u000a	if (State.passage != 'Warning')\u000a	{\u000a		/** Play keystroke sound on link clicks. **/\u000a		$('a').click(function() {\u000a			playRandomKeystrokeSound(0.7);\u000a		});\u000a	}\u000a};
+Vwindow.sndTest = new Howl({\u000a	src: ['sound_volume_check_test.mp3'],\u000a	loop: false,\u000a	volume: 0.9\u000a});\u000a\u000a\u000awindow.sndWhispers = new Howl({\u000a	src: ['whispers.mp3'],\u000a	loop: true,\u000a	volume: 0.6\u000a});\u000a\u000awindow.sndScream01 = new Howl({\u000a	src: ['scream01.mp3'],\u000a	loop: false,\u000a	volume: 0.8\u000a});\u000a\u000awindow.sndNeon = new Howl({\u000a	src: ['neon.mp3'],\u000a	loop: false,\u000a	volume: 0.6\u000a});\u000a\u000awindow.sndGlitch = new Howl({\u000a	src: ['glitch.mp3'],\u000a	loop: true,\u000a	volume: 0.6\u000a});\u000a\u000awindow.sndYay = new Howl({\u000a	src: ['yay.mp3'],\u000a	loop: false,\u000a	volume: 0.6\u000a});\u000a\u000awindow.sndCannon = new Howl({\u000a	src: ['cannon.mp3'],\u000a	loop: false,\u000a	volume: 0.7\u000a});\u000a\u000awindow.sndWhisper01 = new Howl({\u000a	src: ['whisper01.mp3'],\u000a	loop: false,\u000a	volume: 0.9\u000a});\u000a\u000awindow.sndWhisper02 = new Howl({\u000a	src: ['whisper02.mp3'],\u000a	loop: false,\u000a	volume: 0.7\u000a});\u000a\u000awindow.sndWhisper03 = new Howl({\u000a	src: ['whisper03.mp3'],\u000a	loop: false,\u000a	volume: 0.7\u000a});\u000a\u000a\u000awindow.sndWhisper04 = new Howl({\u000a	src: ['whisper04.mp3'],\u000a	loop: false,\u000a	volume: 0.7\u000a});\u000a\u000a/** Typewriter stuff **/\u000awindow.sndKey01 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey02 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey03 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey04 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey05 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey06 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey07 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000awindow.sndKey08 = new Howl({\u000a	src: ['keystroke01.mp3']\u000a});\u000a\u000avar sndArray = Array(sndKey01, sndKey02, sndKey03, sndKey04, sndKey05,sndKey06, sndKey07, sndKey08);\u000avar sndRandom = sndKey01;\u000avar minVolume = 0.1;\u000avar maxVolume = 0.6;\u000avar volume = minVolume;\u000a\u000awindow.playRandomKeystrokeSound = function(volume) {\u000a	sndRandom = sndArray[Math.floor(Math.random() * sndArray.length)];\u000a	if (!volume) {\u000a		volume = Math.random() * maxVolume;\u000a	}\u000a	if (volume < minVolume) {\u000a		volume = minVolume;\u000a	}\u000a	sndRandom.volume(volume);\u000a	sndRandom.play();\u000a};\u000a\u000a/** Glitch stuff **/\u000awindow.playRandomGlitchSound = function(length) {\u000a	try\u000a	{\u000a		var volume = 0.5;\u000a		/**\u000a		var duration = sndGlitch.duration();\u000a		var position = Math.random() * duration;\u000a		sndGlitch.seek(position);\u000a		**/\u000a		sndGlitch.volume(volume);\u000a		sndGlitch.play();\u000a		setTimeout(function() { \u000a			sndGlitch.pause();\u000a		}, length);		\u000a	}\u000a	catch(e) {\u000a	}\u000a};\u000a\u000awindow.neonSign = function(){\u000a    var randSeconds = Math.floor(Math.random()*2000)+0;\u000a    var randDelay = randSeconds;\u000a    var speed=300;\u000a    var $toAnimate=$('body.neon-flicker');\u000a    $toAnimate.delay(randDelay).animate({'opacity':0.3},speed,function() {\u000a        $toAnimate.animate({'opacity':1},speed,neonSign() );\u000a		if (Math.random() > 0.5)\u000a		{\u000a			var volume = Math.random() * 0.6;\u000a		}\u000a    });\u000a};\u000a\u000a/** Whisper sounds in 'between' passages (and end sequence). **/\u000apostdisplay.handleWhisperSounds = function() {\u000a	if (tags().contains('endsequence')) {\u000a		return;\u000a	}\u000a	else {\u000a		if (tags().contains('between'))\u000a		{\u000a			sndWhispers.play();\u000a		}\u000a		else {\u000a			sndWhispers.stop();\u000a		}\u000a	}\u000a};\u000a\u000apostdisplay.handleLinkClicks = function() {\u000a	if (State.passage != 'Warning')\u000a	{\u000a		/** Play keystroke sound on link clicks. **/\u000a		$('a').click(function() {\u000a			playRandomKeystrokeSound(0.7);\u000a		});\u000a	}\u000a};
 p1821
 sg23
 Vsoundstuff
@@ -5670,12 +5670,12 @@ sg25
 g26
 ((I2016
 I10
-I20
-I7
-I38
+I21
+I11
 I8
-I3
-I294
+I5
+I4
+I295
 I1
 tp1823
 (dp1824
@@ -5927,7 +5927,7 @@ Tiddler
 p1902
 (dp1903
 g21
-V<table class="fullscreen"><tr><td>\u000a<div id="warning-message">\u000aThis game takes about 15 minutes to play through.<br>\u000aIt is recommended to play with headphones. <br>\u000a\u000a<span class="button">\u000a<<link "\u25b6 Sound Check">><<script>>sndTest.stop();sndTest.play();<</script>><</link>>\u000a</span>\u000a\u000a<br>\u000a\u000aWARNING: contains flashing images, and some depictions of violence.\u000a<br>\u000a<span class="button">\u000a	<<click "Continue">><<script>>\u000a		$.when( fullscreen() ).done( state.play("Title FadeIn") );\u000a	<</script>><</click>>\u000a</span>\u000a\u000a</div>\u000a</td></tr></table>
+V<table class="fullscreen"><tr><td>\u000a<div id="warning-message">\u000aThis game takes about 15 minutes to play through.<br>\u000aIt is recommended to play with headphones. In the dark.<br>\u000a\u000a<span class="button">\u000a<<link "\u25b6 Sound Check">><<script>>sndTest.stop();sndTest.play();<</script>><</link>>\u000a</span>\u000a\u000a<br>\u000a\u000aWARNING: contains flashing images, and some depictions of violence.\u000a<br>\u000a<span class="button">\u000a	<<click "Continue">><<script>>\u000a		$.when( fullscreen() ).done( state.play("Title FadeIn") );\u000a	<</script>><</click>>\u000a</span>\u000a\u000a</div>\u000a</td></tr></table>
 p1904
 sg23
 VWarning
@@ -5937,9 +5937,9 @@ g26
 ((I2016
 I10
 I21
-I9
-I51
-I24
+I11
+I7
+I17
 I4
 I295
 I1
